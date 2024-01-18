@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!--Nav Bar-->
+    <header class="header" id="header">
+        <a href="#" id="logo">Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        
+        <nav class="nav-bar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about" >About</a>
+            <a href="#portafolio-section">Proyectos</a>
+            <a href="#contact-section">Contacto</a>
+        </nav>
+    </header>
+
+    <!--Home-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Diego Garcia</h1>
+            <p>Desarrollador Web en formación...</p>
+                
+            <div class="social-media-home">
+                <a href="https://www.linkedin.com/in/diego-garc%C3%ADa-06510854/"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/diegogarciaal"><i class='bx bxl-github'></i></a>
+            </div>
+            
+        </div>
+
+        <div class="contenedor-de-circulos">
+            <div class="circulo circulo-1"></div>
+
+            <div class="imagen-home">
+                <img src="./DG.JPG" alt="">
+            </div>
+
+            <div class="circulo circulo2"></div>
+        </div>
+        
+        
+    </section>
+    <!--Sección About y Video-->
+    <section class="about" id="about">
+
+        <div class="video">
+            <iframe width="700" height="400" src="https://www.youtube.com/embed/SpA__MN9bAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="text-about">
+            <h2 class="heading">About Me</h2>
+            <h3>Full Stack Developer en proceso</h3>
+            <p>Hola! <br> Soy Diego Garcia y me encuentro actuamlente cursando el Certificado Profesional en Programación: Desarrollo Full Stack del MIT. Me interesa mucho la tecnología, la inovación y el arte. Estudié la carrera de Historia del Arte y estoy interesado en la creación de contenido artístico con tecnología, asi como la Inteligencia Artificial y el emprendimiento empresarial con el desarrollo de aplicaciones móviles.
+            </p>
+        </div>
+
+    </section>
+
+    <!--Sección Proyectos-->
+    <section class="portafolio-section" id="portafolio-section">
+        <h2 class="heading">Proyectos</h2>
+        <div class="portafolio-Container">
+            <div class="portafolio-box">
+                
+                <video  autoplay loop muted class="video">
+                    <source src="./Pacmen video.mp4" type="video/mov">
+                    <source src="./Pacmen video.webm" type="video/webm">
+                </video>
+                <div class="portafolio-layer titulo-pacmen">
+                    <h4>PacMen</h4>
+                    <p class="text-pacman">Ejercicio de manipulación del DOM donde se crean elementos en el Navegador y se mueven a una velocidad aleatoria</p>
+                    <div class="Links-repo-probarlo">
+                        <a href="https://github.com/diegogarciaal/PacMen-Exercise.github.io" class="link-proyectos"> <i class='bx bxl-github' ></i></i></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="portafolio-box">
+                <video width="100%" height="100%" autoplay loop muted class="video">
+                    <source src="./Eyes video.mp4" type="video/mov">
+                    <source src="./Eyes video.webm" type="video/webm">
+                </video>
+                <div class="portafolio-layer titulo-pacman">
+                    <h4>Eyes Excercise</h4>
+                    <p class="text-pacman">Ejercicio de dos ojos que siguen el movimiento del mouse</p>
+                    <div class="Links-repo-probarlo">
+                        <a href="https://github.com/diegogarciaal/Eye-Exercise.github.io"><i class='bx bxl-github' ></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portafolio-box">
+                <video width="100%" height="100%" autoplay loop muted class="video">
+                    <source src="./Bus video.mov" type="video/mov">
+                    <source src="./Bus video.webm" type="video/webm">
+                </video>
+                <div class="portafolio-layer">
+                    <h4>Bus Tracker</h4>
+                    <p>Ejercicio para crear un mapa y hacer tracking del recorrido de un objeto de un lugar a otro</p>
+                    <div class="Links-repo-probarlo">
+                        <a href="https://github.com/diegogarciaal/Real-Time-Bus-Tracker.github.io"><i class='bx bxl-github' ></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section class="contact-section" id="contact-section">
+        <h2 class="heading">Contacto</h2>
+
+        <form action="https://formsubmit.co/diegogarciaal@gmail.com" method="POST" class="contact-section" onsubmit="sendMessage()">
+            <div class="input-box">
+                <input type="text" placeholder="Nombre" name="name">
+                <input type="email" placeholder="Email" name="email">
+            </div>
+            <textarea name="commets" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <input type="submit" value="Send" class="boton-send">
+
+            <input type="hidden" name="_next" value="https://github.com/diegogarciaal">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+</body>
+</html>
